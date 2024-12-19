@@ -17,6 +17,7 @@ Quartus détecte automatiquement les composants connectés
 Deux puces sont affichées : 
 
 1-SOCVHPS et 5CSEBA6U23.
+
 2-5CSEBA6U23 c'est l'élément programmable. L'autre correspond au processeur ARM (HPS) intégré dans le SoC.
 
 ![image](https://github.com/user-attachments/assets/45a97634-891d-44e3-850d-4630501726e9)
