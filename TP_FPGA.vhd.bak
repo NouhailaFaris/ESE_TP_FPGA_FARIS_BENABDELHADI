@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity TP_FPGA is
+port (
+sw : in std_logic;
+led : out std_logic
+);
+end entity TP_FPGA;
+architecture rtl of TP_FPGA is
+begin
+led <= sw;
+end architecture rtl;
