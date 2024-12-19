@@ -8,3 +8,7 @@ Un projet dans Quartus est un espace de travail où on peu configurer, développ
 ## Fichier de contrainte
 
 ![image](https://github.com/user-attachments/assets/1a469142-2cc3-4db2-8517-a11b2742fae5)
+
+
+![image](https://github.com/user-attachments/assets/45a97634-891d-44e3-850d-4630501726e9)
+
