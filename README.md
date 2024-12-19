@@ -35,7 +35,16 @@ Puisque les signaux sw et led sont maintenant des vecteurs de 4 bits, il est né
 
 ![WhatsApp Image 2024-12-19 at 09 15 04](https://github.com/user-attachments/assets/71aa478f-3c93-434d-bd23-c824a53a9cf8)
 
-1.6 Faire clignoter une LED
+## Faire clignoter une LED
 
+ ### La broche FPGA_CLK1_50:
+- Elle fournit une fréquence d'horloge de 50 MHz.
+- Cette horloge est utilisée pour les designs séquentiels où les opérations dépendent d’un signal temporel.
+  
 ![image](https://github.com/user-attachments/assets/9fde7b2c-c40d-4b93-9eb2-ab7bf954499f)
 
+### Schéma RTL :
+Le schéma RTL (Register Transfer Level) généré par Quartus montre les éléments clés du design :
+- Entrée d'horloge i_clk connectée à un basculeur (flip-flop).
+- Signal de reset i_rst_n pour réinitialiser la bascule.
+- Sortie o_led connectée à l'état de la bascule.
