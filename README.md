@@ -1,6 +1,8 @@
 # ESE_TP_FPGA_FARIS_BENABDELHADI
 ## Création du projet et fichier VHDL
 
+Un projet dans Quartus est un espace de travail où on peu configurer, développer, compiler et tester notre design pour un FPGA spécifique. Il contient tous les fichiers nécessaires (VHDL, contraintes, configurations, etc.).
+
 ![image](https://github.com/user-attachments/assets/cc96e5e8-a7f8-49ce-a5f3-19d23ffa2958)
 
 ## Fichier de contrainte
