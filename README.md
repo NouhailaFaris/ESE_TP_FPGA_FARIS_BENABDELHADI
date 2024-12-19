@@ -82,7 +82,7 @@ Actif bas (_n) : Le signal est actif lorsque sa valeur est à 0.
 ###chenillard
 ![image](https://github.com/user-attachments/assets/0d59728d-2c47-4c4e-a742-797748ae3a03)
 
-***fonctionnement :**
+***fonctionnement :***
 1-Compteur pour réduction de fréquence :
 
 Le compteur divise la fréquence de l'horloge (50 MHz) .
@@ -94,4 +94,10 @@ Les bits du vecteur chenille sont décalés de manière circulaire à chaque cyc
 3-Signal de reset :
 
 Permet de réinitialiser le chenillard à son état initial (00000001).
+
+***Bouton poussoir KEY0**
+
+Connexion : Sur la carte DE10-Nano, le bouton poussoir KEY0 est connecté à la broche PIN_AH0.
+
+Utilisation : on utilise ce bouton  pour réinitialiser le chenillard à son état initial.
 
