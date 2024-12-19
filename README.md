@@ -27,8 +27,8 @@ Deux puces sont affichées : SOCVHPS et 5CSEBA6U23.
 
 Gestion de plusieurs bits :
 
-std_logic représente un seul bit (0 ou 1).
-std_logic_vector est un tableau de plusieurs bits, utile pour gérer des données multi-bit comme des bus (par exemple, un groupe de switches ou de LEDs).
+- std_logic représente un seul bit (0 ou 1).
+- std_logic_vector est un tableau de plusieurs bits, utile pour gérer des données multi-bit comme des bus (par exemple, un groupe de switches ou de LEDs).
 
 ![image](https://github.com/user-attachments/assets/67ae2565-d6a0-4155-8fde-bc3412534430)
 
