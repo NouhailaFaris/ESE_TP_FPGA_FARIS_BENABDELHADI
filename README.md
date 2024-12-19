@@ -82,3 +82,16 @@ Actif bas (_n) : Le signal est actif lorsque sa valeur est à 0.
 ###chenillard
 ![image](https://github.com/user-attachments/assets/0d59728d-2c47-4c4e-a742-797748ae3a03)
 
+***fonctionnement :**
+1-Compteur pour réduction de fréquence :
+
+Le compteur divise la fréquence de l'horloge (50 MHz) .
+
+2-Décalage circulaire :
+
+Les bits du vecteur chenille sont décalés de manière circulaire à chaque cycle complet du compteur, créant l'effet de déplacement progressif.
+
+3-Signal de reset :
+
+Permet de réinitialiser le chenillard à son état initial (00000001).
+
