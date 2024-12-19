@@ -48,3 +48,6 @@ Le schéma RTL (Register Transfer Level) généré par Quartus montre les élém
 - Entrée d'horloge i_clk connectée à un basculeur (flip-flop).
 - Signal de reset i_rst_n pour réinitialiser la bascule.
 - Sortie o_led connectée à l'état de la bascule.
+
+- ![image](https://github.com/user-attachments/assets/4c1861d0-94aa-4348-8ba9-74a797eee164)
+
