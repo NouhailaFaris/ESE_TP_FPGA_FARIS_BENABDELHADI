@@ -47,10 +47,11 @@ Puisque les signaux sw et led sont maintenant des vecteurs de 4 bits, il est né
 
 ```mermaid
 graph TD
-    clk[i_clk (Horloge 50 MHz)] --> FF1[Flip-Flop]
-    rst[i_rst_n (Reset actif bas)] --> FF1[Flip-Flop]
-    FF1[Flip-Flop] --> LED[o_led (Sortie pour LED)]
-    FF1 --> R[r_led (Signal interne)]
+    CLK[i_clk (Horloge 50 MHz)] --> FF1[Flip-Flop]
+    RST[i_rst_n (Reset actif bas)] --> FF1[Flip-Flop]
+    FF1[Flip-Flop] --> LED[o_led (Sortie LED)]
+    FF1 --> RL[r_led (Signal interne)]
+```
 
 ### Schéma RTL :
 Le schéma RTL (Register Transfer Level) généré par Quartus montre les éléments clés du design :
