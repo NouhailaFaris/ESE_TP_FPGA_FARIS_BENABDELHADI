@@ -12,3 +12,4 @@ Un projet dans Quartus est un espace de travail où on peu configurer, développ
 
 ![image](https://github.com/user-attachments/assets/45a97634-891d-44e3-850d-4630501726e9)
 
+![WhatsApp Image 2024-12-19 at 08 59 40](https://github.com/user-attachments/assets/2992e9bf-b7cc-44c8-8293-a8e04ebf763a)
