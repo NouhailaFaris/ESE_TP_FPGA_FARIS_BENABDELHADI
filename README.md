@@ -25,3 +25,7 @@ Deux puces sont affichées : SOCVHPS et 5CSEBA6U23.
 
 ## Modification du VHDL
 
+
+
+![image](https://github.com/user-attachments/assets/67ae2565-d6a0-4155-8fde-bc3412534430)
+
