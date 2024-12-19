@@ -29,6 +29,7 @@ Gestion de plusieurs bits :
 
 - std_logic représente un seul bit (0 ou 1).
 - std_logic_vector est un tableau de plusieurs bits, utile pour gérer des données multi-bit comme des bus (par exemple, un groupe de switches ou de LEDs).
+Puisque les signaux sw et led sont maintenant des vecteurs de 4 bits, il est nécessaire d’assigner une broche différente pour chaque bit :
 
 ![image](https://github.com/user-attachments/assets/67ae2565-d6a0-4155-8fde-bc3412534430)
 
