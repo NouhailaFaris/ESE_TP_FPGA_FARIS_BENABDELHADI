@@ -9,6 +9,8 @@ Un projet dans Quartus est un espace de travail où on peu configurer, développ
 
 Le fichier de contraintes permet d'indiquer au logiciel Quartus quelles broches physiques du FPGA (pins) correspondent aux signaux définis dans notre code VHDL. Sans ces informations, Quartus ne peut pas relier les signaux logiques aux composants matériels (LEDs, switches, etc.) de la carte.
 
+## Programmation de la carte
+
 ![image](https://github.com/user-attachments/assets/1a469142-2cc3-4db2-8517-a11b2742fae5)
 
 Deux puces sont affichées : SOCVHPS et 5CSEBA6U23.
