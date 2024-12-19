@@ -45,6 +45,8 @@ Puisque les signaux sw et led sont maintenant des vecteurs de 4 bits, il est né
 
 ### Notre shéma:
 
+![image](https://github.com/user-attachments/assets/d0a386d8-decc-434e-8c9b-f17398916b98)
+
 ### Schéma RTL :
 Le schéma RTL (Register Transfer Level) généré par Quartus montre les éléments clés du design :
 - Entrée d'horloge i_clk connectée à un basculeur (flip-flop).
