@@ -37,31 +37,61 @@ Puisque les signaux sw et led sont maintenant des vecteurs de 4 bits, il est né
 
 ## Faire clignoter une LED
 
- ### La broche FPGA_CLK1_50:
+### Code VHDL initial pour faire clignoter une LED
+
+***La broche FPGA_CLK1_50:***
+
 - Elle fournit une fréquence d'horloge de 50 MHz.
 - Cette horloge est utilisée pour les designs séquentiels où les opérations dépendent d’un signal temporel.
   
 ![image](https://github.com/user-attachments/assets/9fde7b2c-c40d-4b93-9eb2-ab7bf954499f)
 
-### Notre shéma:
+***Notre shéma:***
 
 ![image](https://github.com/user-attachments/assets/d0a386d8-decc-434e-8c9b-f17398916b98)
 
-### Schéma RTL :
+***Schéma RTL :***
 Le schéma RTL (Register Transfer Level) généré par Quartus montre les éléments clés du design :
 - Entrée d'horloge i_clk connectée à un basculeur (flip-flop).
 - Signal de reset i_rst_n pour réinitialiser la bascule.
 - Sortie o_led connectée à l'état de la bascule.
-
-### RTL1
+  
 ![image](https://github.com/user-attachments/assets/4c1861d0-94aa-4348-8ba9-74a797eee164)
 
-### RTL2
+### Code modifié pour réduire la fréquence
+Pour rendre le clignotement perceptible, un compteur est ajouté pour diviser la fréquence de l'horloge.
+
+***Notre shéma:***
+![image](https://github.com/user-attachments/assets/3770c174-7f3d-49cc-b9d1-7fffa2b2f501)
+
+***Schéma RTL :***
 ![image](https://github.com/user-attachments/assets/4781fbaa-2e15-4bc4-95c2-568a0dab51f3)
 
 ### KEY0
 
+***broche du FPGA***
+
 ![image](https://github.com/user-attachments/assets/b66abb19-cc61-4097-bc67-61c9261a7466)
 
+***Signal de reset (i_rst_n):***
 
+Rôle : Initialiser les registres et le compteur dans un état connu (ici, 0).
+
+Actif bas (_n) : Le signal est actif lorsque sa valeur est à 0.
+
+###chenillard
+![image](https://github.com/user-attachments/assets/0d59728d-2c47-4c4e-a742-797748ae3a03)
+
+***fonctionnement :**
+1-Compteur pour réduction de fréquence :
+
+Le compteur divise la fréquence de l'horloge (50 MHz) .
+
+2-Décalage circulaire :
+
+Les bits du vecteur chenille sont décalés de manière circulaire à chaque cycle complet du compteur, créant l'effet de déplacement progressif.
+
+3-Signal de reset :
+
+Permet de réinitialiser le chenillard à son état initial (00000001).
 
