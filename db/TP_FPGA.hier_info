@@ -1,5 +1,12 @@
 |TP_FPGA
-i_clk => r_led.CLK
+i_clk => chenille[0].CLK
+i_clk => chenille[1].CLK
+i_clk => chenille[2].CLK
+i_clk => chenille[3].CLK
+i_clk => chenille[4].CLK
+i_clk => chenille[5].CLK
+i_clk => chenille[6].CLK
+i_clk => chenille[7].CLK
 i_clk => r_led_enable.CLK
 i_clk => counter[0].CLK
 i_clk => counter[1].CLK
@@ -48,7 +55,21 @@ i_rst_n => counter[19].ACLR
 i_rst_n => counter[20].ACLR
 i_rst_n => counter[21].ACLR
 i_rst_n => counter[22].ACLR
-i_rst_n => r_led.ENA
-o_led << r_led.DB_MAX_OUTPUT_PORT_TYPE
+i_rst_n => chenille[0].ENA
+i_rst_n => chenille[7].ENA
+i_rst_n => chenille[6].ENA
+i_rst_n => chenille[5].ENA
+i_rst_n => chenille[4].ENA
+i_rst_n => chenille[3].ENA
+i_rst_n => chenille[2].ENA
+i_rst_n => chenille[1].ENA
+o_led[0] << chenille[0].DB_MAX_OUTPUT_PORT_TYPE
+o_led[1] << chenille[1].DB_MAX_OUTPUT_PORT_TYPE
+o_led[2] << chenille[2].DB_MAX_OUTPUT_PORT_TYPE
+o_led[3] << chenille[3].DB_MAX_OUTPUT_PORT_TYPE
+o_led[4] << chenille[4].DB_MAX_OUTPUT_PORT_TYPE
+o_led[5] << chenille[5].DB_MAX_OUTPUT_PORT_TYPE
+o_led[6] << chenille[6].DB_MAX_OUTPUT_PORT_TYPE
+o_led[7] << chenille[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
