@@ -57,7 +57,7 @@ Le schéma RTL (Register Transfer Level) généré par Quartus montre les élém
 ![image](https://github.com/user-attachments/assets/4c1861d0-94aa-4348-8ba9-74a797eee164)
 
 ### RTL2
-![image](https://github.com/user-attachments/assets/715b1f95-a903-4f64-a0d2-17e297bdb073)
+![image](https://github.com/user-attachments/assets/4781fbaa-2e15-4bc4-95c2-568a0dab51f3)
 
 ### KEY0
 
