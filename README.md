@@ -55,10 +55,11 @@ Le schéma RTL (Register Transfer Level) généré par Quartus montre les élém
 - Entrée d'horloge i_clk connectée à un basculeur (flip-flop).
 - Signal de reset i_rst_n pour réinitialiser la bascule.
 - Sortie o_led connectée à l'état de la bascule.
+  
+![image](https://github.com/user-attachments/assets/4c1861d0-94aa-4348-8ba9-74a797eee164)
 
 ### Code modifié pour réduire la fréquence
 Pour rendre le clignotement perceptible, un compteur est ajouté pour diviser la fréquence de l'horloge.
-![image](https://github.com/user-attachments/assets/4c1861d0-94aa-4348-8ba9-74a797eee164)
 
 ***Notre shéma:***
 ![image](https://github.com/user-attachments/assets/3770c174-7f3d-49cc-b9d1-7fffa2b2f501)
@@ -68,7 +69,15 @@ Pour rendre le clignotement perceptible, un compteur est ajouté pour diviser la
 
 ### KEY0
 
+***broche du FPGA***
+
 ![image](https://github.com/user-attachments/assets/b66abb19-cc61-4097-bc67-61c9261a7466)
 
+***Signal de reset (i_rst_n):***
 
+Rôle : Initialiser les registres et le compteur dans un état connu (ici, 0).
+
+Actif bas (_n) : Le signal est actif lorsque sa valeur est à 0.
+
+###chenillard
 
