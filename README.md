@@ -51,5 +51,10 @@ Le schéma RTL (Register Transfer Level) généré par Quartus montre les élém
 - Signal de reset i_rst_n pour réinitialiser la bascule.
 - Sortie o_led connectée à l'état de la bascule.
 
-- ![image](https://github.com/user-attachments/assets/4c1861d0-94aa-4348-8ba9-74a797eee164)
+RTL1
+![image](https://github.com/user-attachments/assets/4c1861d0-94aa-4348-8ba9-74a797eee164)
+
+RTL2
+![image](https://github.com/user-attachments/assets/715b1f95-a903-4f64-a0d2-17e297bdb073)
+
 
