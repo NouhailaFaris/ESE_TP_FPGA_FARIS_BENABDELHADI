@@ -80,4 +80,5 @@ Rôle : Initialiser les registres et le compteur dans un état connu (ici, 0).
 Actif bas (_n) : Le signal est actif lorsque sa valeur est à 0.
 
 ###chenillard
+![image](https://github.com/user-attachments/assets/0d59728d-2c47-4c4e-a742-797748ae3a03)
 
