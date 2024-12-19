@@ -15,6 +15,7 @@ Le fichier de contraintes permet d'indiquer au logiciel Quartus quelles broches 
 avec l'option Auto Detect :
 Quartus détecte automatiquement les composants connectés 
 Deux puces sont affichées : 
+
 1-SOCVHPS et 5CSEBA6U23.
 2-5CSEBA6U23 c'est l'élément programmable. L'autre correspond au processeur ARM (HPS) intégré dans le SoC.
 
