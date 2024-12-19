@@ -98,7 +98,7 @@ Les bits du vecteur chenille sont décalés de manière circulaire à chaque cyc
 
 Permet de réinitialiser le chenillard à son état initial (00000001).
 
-***Bouton poussoir KEY0**
+***Bouton poussoir KEY0***
 
 Connexion : Sur la carte DE10-Nano, le bouton poussoir KEY0 est connecté à la broche PIN_AH0.
 
