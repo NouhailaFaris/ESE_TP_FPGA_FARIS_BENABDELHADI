@@ -138,29 +138,29 @@ Valeur par défaut : 480 pixels.
 
 2. Paramètres de Timing Horizontal :
 
-h_sync (Horizontal Sync Pulse Width)
+. h_sync (Horizontal Sync Pulse Width)
 Rôle : Durée de l'impulsion de synchronisation horizontale, signalant la fin d'une ligne de balayage.
 Unité : Cycles d'horloge.
 
-h_fp (Horizontal Front Porch)
+. h_fp (Horizontal Front Porch)
 Rôle : Temps d'attente avant l'impulsion de synchronisation horizontale. Permet de stabiliser le signal.
 Unité :Cycles d'horloge.
 
-h_bp (Horizontal Back Porch)
+. h_bp (Horizontal Back Porch)
 Rôle : Temps d'attente après l'impulsion de synchronisation horizontale, avant l'affichage des pixels visibles.
 Unité :Cycles d'horloge.
 
 3. Paramètres de Timing vertical :
 
-v_sync (Vertical Sync Pulse Width)
+. v_sync (Vertical Sync Pulse Width)
 Rôle : Durée de l'impulsion de synchronisation verticale, signalant la fin d'une trame (frame).
 Unité : Lignes.
 
-v_fp (Vertical Front Porch)
+. v_fp (Vertical Front Porch)
 Rôle : emps d'attente avant l'impulsion de synchronisation verticale. Permet de stabiliser le signal verticalement.
 Unité : Lignes.
 
-v_bp (Vertical Back Porch)
+. v_bp (Vertical Back Porch)
 Rôle : Temps d'attente après l'impulsion de synchronisation verticale, avant l'affichage des pixels visibles.
 Unité : Lignes.
 
