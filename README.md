@@ -126,12 +126,12 @@ hdmi_generator.vhd : Module à compléter pour générer les images.
 
 1. Paramètres de Résolution (paramètres définis en generic ) :
    
-h_res (Horizontal Resolution)
+- h_res (Horizontal Resolution)
 Rôle : Définit la largeur de l'image en pixels (nombre total de colonnes visibles).
 Unité : Pixels.
 Valeur par défaut : 720 pixels.
 
-v_res (Vertical Resolution)
+- v_res (Vertical Resolution)
 Rôle : Définit la hauteur de l'image en pixels (nombre total de lignes visibles).
 Unité : Pixels.
 Valeur par défaut : 480 pixels.
