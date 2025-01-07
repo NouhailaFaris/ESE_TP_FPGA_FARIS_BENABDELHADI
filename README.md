@@ -1,5 +1,5 @@
 # ESE_TP_FPGA_FARIS_BENABDELHADI
-## Création du projet et fichier VHDL
+## TP1 : Création du projet et fichier VHDL
 
 Un projet dans Quartus est un espace de travail où on peu configurer, développer, compiler et tester notre design pour un FPGA spécifique. Il contient tous les fichiers nécessaires (VHDL, contraintes, configurations, etc.).
 
@@ -104,3 +104,72 @@ Connexion : Sur la carte DE10-Nano, le bouton poussoir KEY0 est connecté à la 
 
 Utilisation : on utilise ce bouton  pour réinitialiser le chenillard à son état initial.
 
+## TP 2 : Petit projet : Bouncing ENSEA Logo
+### Objectif : 
+Afficher un logo ENSEA rebondissant sur un écran HDMI, similaire à l'effet observé dans les lecteurs DVD.
+
+### Contrôleur HDMI :
+
+#### Ressources Disponibles:
+
+Les ressources suivantes sont fournies sur Moodle :
+
+Projet Quartus avec le pinout préconfiguré.
+
+DE10_Nano_HDMI_TX.vhd : définissant les entrées/sorties.
+
+I2C_HDMI_Config.v et I2C_Controller.v : Modules pour configurer l'émetteur HDMI.
+
+hdmi_generator.vhd : Module à compléter pour générer les images.
+
+#### Analyse de l'Entity:
+
+1. Paramètres de Résolution (paramètres définis en generic ) :
+   
+```
+h_res (Horizontal Resolution)
+Rôle : Définit la largeur de l'image en pixels (nombre total de colonnes visibles).
+Unité : Pixels.
+Valeur par défaut : 720 pixels.
+```
+```
+v_res (Vertical Resolution)
+Rôle : Définit la hauteur de l'image en pixels (nombre total de lignes visibles).
+Unité : Pixels.
+Valeur par défaut : 480 pixels.
+
+```
+2. Paramètres de Timing Horizontal :
+
+```
+h_sync (Horizontal Sync Pulse Width)
+Rôle : Durée de l'impulsion de synchronisation horizontale, signalant la fin d'une ligne de balayage.
+Unité : Cycles d'horloge.
+```
+```
+h_fp (Horizontal Front Porch)
+Rôle : Temps d'attente avant l'impulsion de synchronisation horizontale. Permet de stabiliser le signal.
+Unité :Cycles d'horloge.
+```
+```
+h_bp (Horizontal Back Porch)
+Rôle : Temps d'attente après l'impulsion de synchronisation horizontale, avant l'affichage des pixels visibles.
+Unité :Cycles d'horloge.
+```
+3. Paramètres de Timing vertical :
+
+```
+v_sync (Vertical Sync Pulse Width)
+Rôle : Durée de l'impulsion de synchronisation verticale, signalant la fin d'une trame (frame).
+Unité : Lignes.
+```
+```
+v_fp (Vertical Front Porch)
+Rôle : emps d'attente avant l'impulsion de synchronisation verticale. Permet de stabiliser le signal verticalement.
+Unité : Lignes.
+```
+```
+v_bp (Vertical Back Porch)
+Rôle : Temps d'attente après l'impulsion de synchronisation verticale, avant l'affichage des pixels visibles.
+Unité : Lignes.
+```
