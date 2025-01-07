@@ -164,3 +164,18 @@ Unité : Lignes.
 Rôle : Temps d'attente après l'impulsion de synchronisation verticale, avant l'affichage des pixels visibles.
 Unité : Lignes.
 
+#### Création de compteurs horizontal (h_count):
+
+***Le compteur horizontal est incrémenté à chaque cycle d’horloge et revient à zéro lorsqu’il atteint h_total. Il génère également le signal de synchronisation o_hdmi_hs.***
+
+Valeurs pour Test :
+
+h_sync=10
+h_fp=10
+h_fp=10
+v_sync=10
+v_fp=10
+v_fp=10
+h_res=32
+v_res=24
+h_total pour comptage= 
