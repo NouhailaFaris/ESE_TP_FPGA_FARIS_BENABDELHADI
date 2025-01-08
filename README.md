@@ -185,7 +185,7 @@ constant  v_bp    : natural := 10;  -- Back porch (px)
 
 ![Screenshot_20250107_115145](https://github.com/user-attachments/assets/dd89b115-722e-43c1-8cf4-178a2b2c5f20)
 
-####2.  Création de compteurs vertical (v_count):
+#### 2.  Création de compteurs vertical (v_count):
 
 ***le  compteur vertical (v_count) s'incrémente à chaque fin de ligne horizontale :
 Boucle de 0 à v_total = (v_res + v_sync + v_fp + v_bp).
@@ -193,7 +193,7 @@ Génère le signal de synchronisation verticale (o_hdmi_vs).***
 
 ![Screenshot_20250107_120354](https://github.com/user-attachments/assets/f2b58a67-980c-406b-8261-ee536655c7ae)
 
-####3. Détermination les plages de h_count et v_count où les pixels sont visibles
+#### 3. Détermination les plages de h_count et v_count où les pixels sont visibles
 
 les pages de h_count sont déterminés par :
  ```
@@ -213,11 +213,11 @@ valeurs avec le test :
 ![h_act_down](https://github.com/user-attachments/assets/ff82e66c-31b9-4034-ac89-3f61dae60683)
 ![h_act_up](https://github.com/user-attachments/assets/e9278fdd-4b31-4316-a935-e03fabcff2d4)
 
-####4. Production du signal o_hdmi_de lorsqu'un pixel est dans la zone active.donc o_hdmi_de = s_v_act and s_h_act 
+#### 4. Production du signal o_hdmi_de lorsqu'un pixel est dans la zone active.donc o_hdmi_de = s_v_act and s_h_act 
 
 ![hdmi_de](https://github.com/user-attachments/assets/00ec051f-9858-4246-a7dc-5c2a07f8afc3)
 
-####5. Adresse des Pixels
+#### 5. Adresse des Pixels
 
 Un compteur (r_pixel_counter) est utilisé pour générer l'adresse des pixels actifs :
 
@@ -228,7 +228,7 @@ dans notre cas la taille max de r_pixel_counter = h_res * v_res -1 =768
 
 ![r_pixel_counter_767](https://github.com/user-attachments/assets/402b9c8d-c629-4fce-bfd5-c03eb0f766f5)
 
-####6. Compteurs des Pixels
+#### 6. Compteurs des Pixels
 
 ![y_x_conter](https://github.com/user-attachments/assets/b7b755ed-2c87-4b84-8ce6-55d1fda251d4)
 
