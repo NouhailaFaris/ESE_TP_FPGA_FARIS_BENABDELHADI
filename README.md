@@ -179,3 +179,8 @@ v_fp=10
 h_res=32
 v_res=24
 h_total pour comptage= 
+
+![Screenshot_20250107_115145](https://github.com/user-attachments/assets/dd89b115-722e-43c1-8cf4-178a2b2c5f20)
+
+![Screenshot_20250107_120354](https://github.com/user-attachments/assets/f2b58a67-980c-406b-8261-ee536655c7ae)
+
