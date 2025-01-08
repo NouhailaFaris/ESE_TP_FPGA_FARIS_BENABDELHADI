@@ -164,23 +164,73 @@ Unité : Lignes.
 Rôle : Temps d'attente après l'impulsion de synchronisation verticale, avant l'affichage des pixels visibles.
 Unité : Lignes.
 
-#### Création de compteurs horizontal (h_count):
+## Ecriture du composant:
+#### 1.  Création de compteurs horizontal (h_count):
 
-***Le compteur horizontal est incrémenté à chaque cycle d’horloge et revient à zéro lorsqu’il atteint h_total. Il génère également le signal de synchronisation o_hdmi_hs.***
+***Le compteur horizontal est incrémenté à chaque cycle d’horloge et revient à zéro lorsqu’il atteint h_total = h_res+h_fp + h_sync +h_bp . Il génère également le signal de synchronisation o_hdmi_hs.***
 
 Valeurs pour Test :
 
-h_sync=10
-h_fp=10
-h_fp=10
-v_sync=10
-v_fp=10
-v_fp=10
-h_res=32
-v_res=24
-h_total pour comptage= 
+```
+constant h_res    : natural := 32; --Résolution  horizontale en pixel
+constant v_res    : natural := 24; --Résolution verticale en pixel
+constant h_sync  : natural := 10; -- Sync pulse (lines)
+constant  h_fp    : natural := 10; -- Front porch (px)
+constant  h_bp    : natural := 10; -- Back porch (px)
+constant  v_sync  : natural := 10; -- Sync pulse (lines)
+constant  v_fp    : natural := 10; -- Front porch (px)
+constant  v_bp    : natural := 10;  -- Back porch (px)
+
+```
 
 ![Screenshot_20250107_115145](https://github.com/user-attachments/assets/dd89b115-722e-43c1-8cf4-178a2b2c5f20)
 
+#### Création de compteurs vertical (v_count):
+
+***le  compteur vertical (v_count) s'incrémente à chaque fin de ligne horizontale :
+Boucle de 0 à v_total = (v_res + v_sync + v_fp + v_bp).
+Génère le signal de synchronisation verticale (o_hdmi_vs).***
+
 ![Screenshot_20250107_120354](https://github.com/user-attachments/assets/f2b58a67-980c-406b-8261-ee536655c7ae)
+
+#### Détermination les plages de h_count et v_count où les pixels sont visibles
+
+les pages de h_count sont déterminés par :
+ ```
+if (h_sync + h_fp = s_h_count ) then
+                s_h_act <= '1';
+            elsif (s_h_count = h_sync + h_fp + h_res) then
+                s_h_act <= '0';
+            end if;
+```
+Valeurs théoriques:
+
+- la page de h_count =[20,52]
+- de méme pour la page de v_count =[20,44]
+
+valeurs avec le test :
+
+![h_act_down](https://github.com/user-attachments/assets/ff82e66c-31b9-4034-ac89-3f61dae60683)
+![h_act_up](https://github.com/user-attachments/assets/e9278fdd-4b31-4316-a935-e03fabcff2d4)
+
+#### Production du signal o_hdmi_de lorsqu'un pixel est dans la zone active.donc o_hdmi_de = s_v_act and s_h_act 
+
+![hdmi_de](https://github.com/user-attachments/assets/00ec051f-9858-4246-a7dc-5c2a07f8afc3)
+
+#### Adresse des Pixels
+
+Un compteur (r_pixel_counter) est utilisé pour générer l'adresse des pixels actifs :
+
+Incrémenté uniquement dans la zone active.
+
+Réinitialisé au début de chaque nouvelle image.
+dans notre cas la taille max de r_pixel_counter = h_res * v_res -1 =768 
+
+![r_pixel_counter_767](https://github.com/user-attachments/assets/402b9c8d-c629-4fce-bfd5-c03eb0f766f5)
+
+#### Compteurs des Pixels
+
+![y_x_conter](https://github.com/user-attachments/assets/b7b755ed-2c87-4b84-8ce6-55d1fda251d4)
+
+
 
