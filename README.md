@@ -232,7 +232,23 @@ dans notre cas la taille max de r_pixel_counter = h_res * v_res -1 =768
 
 ![y_x_conter](https://github.com/user-attachments/assets/b7b755ed-2c87-4b84-8ce6-55d1fda251d4)
 
-## Implémentation sur le FPGA:
+## 7. Implémentation sur le FPGA:
 
  maintenant on vas testé le générateur HDMI dans des conditions réelles en connectant les signaux de position des pixels (o_x_counter et o_y_counter) à deux canaux de couleur (vert et bleu). 
 
+![dégradé](https://github.com/user-attachments/assets/d5fcc046-2aca-47ff-a79c-a82f4f6693a3)
+
+## 8.Bouncing ENSEA Logo
+
+L'objectif de cette partie est d'utiliser une architecture scanline rendering pour afficher et déplacer le logo ENSEA en utilisant une mémoire RAM initialisée.
+
+Explication :
+
+1. Implémentation
+
+Intégration de la mémoire RAM dans le projet 
+Ajout du fichier RAM initialisée fourni sur Moodle dans le projet Quartus.
+
+2. affichage
+   
+pour l'affichage on a utilisé compteurs x_counter et y_counter pour calculer l’adresse mémoire correspondant à chaque pixel.
