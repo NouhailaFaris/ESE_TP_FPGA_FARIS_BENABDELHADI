@@ -252,3 +252,10 @@ Ajout du fichier RAM initialisée fourni sur Moodle dans le projet Quartus.
 2. affichage
    
 pour l'affichage on a utilisé compteurs x_counter et y_counter pour calculer l’adresse mémoire correspondant à chaque pixel.
+
+![logoN](https://github.com/user-attachments/assets/5473f83d-5591-4c81-b45e-8ce86a46c61e)
+
+## 9. Déplacer le logo
+
+l'objectif : Le logo ENSEA apparaît et se déplace sur l’écran HDMI en rebondissant contre les bords.
+
