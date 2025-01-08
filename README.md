@@ -232,5 +232,7 @@ dans notre cas la taille max de r_pixel_counter = h_res * v_res -1 =768
 
 ![y_x_conter](https://github.com/user-attachments/assets/b7b755ed-2c87-4b84-8ce6-55d1fda251d4)
 
+## Implémentation sur le FPGA:
 
+ maintenant on vas testé le générateur HDMI dans des conditions réelles en connectant les signaux de position des pixels (o_x_counter et o_y_counter) à deux canaux de couleur (vert et bleu). 
 
